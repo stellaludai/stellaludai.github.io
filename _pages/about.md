@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Ph.D. Student, <a href='https://hkust.edu.hk/'>HKUST</a> · Agentic Search · RAG · Long Context LLMs
 
