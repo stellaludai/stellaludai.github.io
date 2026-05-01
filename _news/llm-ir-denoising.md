@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📄 Our paper on **LLM-oriented information retrieval from a denoising-first perspective** has been accepted at **SIGIR 2026**!
+📄 Our paper **LLM-Oriented Information Retrieval: A Denoising-First Perspective** has been accepted at **SIGIR 2026**!
