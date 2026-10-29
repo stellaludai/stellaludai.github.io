@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📄 Two papers on **knowledge acquisition and unlearning in LLMs** have been accepted at **NeurIPS 2026**!
+📄 Two papers on **knowledge unlearning in LLMs** and **3D affordance grounding with multimodal LLMs** have been accepted at **NeurIPS 2026**!
