@@ -40,20 +40,16 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    {% if page.latest_posts and page.latest_posts.enabled %}
+      {% include blog_banner.liquid %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Selected papers -->

@@ -2,6 +2,61 @@
  * Blog post and listing styles
  ******************************************************************************/
 
+.blog-banner {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 4px;
+  color: var(--global-text-color);
+
+  .blog-banner-label {
+    color: var(--global-theme-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  time {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+
+  .blog-banner-title {
+    flex: 1;
+    font-weight: 500;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+
+    .blog-banner-title {
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
+    }
+  }
+
+  @media (max-width: 575px) {
+    flex-wrap: wrap;
+
+    .blog-banner-title {
+      flex-basis: 100%;
+    }
+
+    .blog-banner-arrow {
+      display: none;
+    }
+  }
+}
+
 .header-bar {
   border-bottom: 1px solid var(--global-divider-color);
   text-align: center;

@@ -1,0 +1,8 @@
+{% for post in site.posts limit: page.latest_posts.limit %}
+  <a class="blog-banner" href="{{ post.url | relative_url }}">
+    <span class="blog-banner-label">Blog</span>
+    <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %d, %Y' }}</time>
+    <span class="blog-banner-title">{{ post.title }}</span>
+    <span class="blog-banner-arrow" aria-hidden="true">&rarr;</span>
+  </a>
+{% endfor %}

@@ -22,9 +22,8 @@ announcements:
   limit: 5
 
 latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
+  enabled: true
+  limit: 1
 ---
 
 I am a Ph.D. student at the [Hong Kong University of Science and Technology (HKUST)](https://hkust.edu.hk/), advised by Prof. [Hui Xiong](https://scholar.google.com/citations?user=cVDF1tkAAAAJ) and co-advised by Prof. [Hao Liu](https://scholar.google.com/citations?user=PLACEHOLDER). My research lies at the intersection of **agentic search**, **retrieval-augmented generation (RAG)**, and **large language models (LLMs)**, with a focus on building more effective agentic search and retrieval-augmented systems, advancing long-context LLMs, and understanding how knowledge is stored and generalized in LLMs.
