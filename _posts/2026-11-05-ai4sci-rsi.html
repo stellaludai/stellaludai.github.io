@@ -486,6 +486,8 @@ related_posts: false
         font-family: Georgia, "Times New Roman", serif;
       }
     </style>
+    <link rel="stylesheet" href="/assets/css/blog-comments.css" />
+    <script src="/assets/js/blog-comments.js" defer></script>
   </head>
   <body>
     <a class="skip" href="#article">Skip to article</a>
@@ -2012,6 +2014,36 @@ related_posts: false
                 self-improving scientific loop may well help us see past empirical mirages and edge closer to the underlying mechanics of nature.
               </p>
             </div>
+          </section>
+
+          <section
+            class="comments copy"
+            id="comments"
+            aria-labelledby="comments-title"
+            data-comments
+            data-article="ai4sci-rsi"
+            data-endpoint="https://ludai-blog-comments.stellaludai.chatgpt.site/api/comments"
+          >
+            <h2 id="comments-title">Comments</h2>
+            <p class="comments-description">Share a thought. No sign-in needed. Comments are public and shared across both language versions.</p>
+            <form class="comment-form">
+              <div class="comment-field">
+                <label for="comment-name">Your name</label>
+                <input id="comment-name" name="name" type="text" autocomplete="name" maxlength="80" required />
+              </div>
+              <div class="comment-field">
+                <label for="comment-content">Content</label>
+                <textarea id="comment-content" name="content" rows="4" maxlength="4000" required></textarea>
+              </div>
+              <div class="comment-actions">
+                <button class="comment-submit" type="submit">Post comment</button>
+                <p class="comment-status" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+            <ol class="comments-list" aria-label="Published comments"></ol>
+            <p class="comments-loading" role="status">Loading comments…</p>
+            <button class="comments-more" type="button" hidden>Load more</button>
+            <noscript><p>Enable JavaScript to read or post comments.</p></noscript>
           </section>
         </article>
       </div>

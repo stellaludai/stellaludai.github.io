@@ -1,0 +1,134 @@
+.comments {
+  border-top: 1px solid var(--line);
+  padding-top: 36px;
+}
+.comments h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.comments .comments-description {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+.comment-form {
+  display: grid;
+  gap: 20px;
+}
+.comment-field {
+  display: grid;
+  gap: 8px;
+}
+.comment-field label {
+  color: var(--muted);
+  font: 600 12px/1.5 var(--mono);
+  letter-spacing: 0.05em;
+}
+.comment-field input,
+.comment-field textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper);
+  color: var(--text);
+  font: inherit;
+}
+.comment-field input {
+  max-width: 360px;
+}
+.comment-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+.comment-field input::placeholder,
+.comment-field textarea::placeholder {
+  color: var(--muted);
+  opacity: 0.75;
+}
+.comment-field input:focus,
+.comment-field textarea:focus {
+  border-color: var(--green);
+}
+.comment-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px 18px;
+  flex-wrap: wrap;
+}
+.comment-submit,
+.comments-more {
+  border: 1px solid var(--green);
+  border-radius: 4px;
+  padding: 10px 20px;
+  background: var(--green);
+  color: var(--paper);
+  font: 600 14px/1.5 var(--font);
+  cursor: pointer;
+}
+.comment-submit:hover {
+  filter: brightness(0.9);
+}
+.comment-submit:disabled,
+.comments-more:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+.comments .comment-status,
+.comments .comments-loading {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.comments .comment-status[data-error="true"] {
+  color: #963e31;
+}
+.comments-list {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+}
+.comment-item {
+  border-top: 1px solid var(--line);
+  padding: 22px 0;
+}
+.comment-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 8px 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.comment-name {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+.comment-date {
+  color: var(--muted);
+  font: 12px/1.5 var(--mono);
+}
+.comments .comment-content {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 0;
+  font-size: 16px;
+}
+.comments-more {
+  background: transparent;
+  color: var(--green);
+  margin-top: 16px;
+}
+.comments-more:hover {
+  background: var(--wash);
+}
+.comments [hidden] {
+  display: none !important;
+}
+@media print {
+  .comments {
+    display: none;
+  }
+}

@@ -470,6 +470,8 @@
         font-family: Georgia, "Times New Roman", serif;
       }
     </style>
+    <link rel="stylesheet" href="/assets/css/blog-comments.css" />
+    <script src="/assets/js/blog-comments.js" defer></script>
   </head>
   <body>
     <a class="skip" href="#article">跳转至正文</a>
@@ -1951,6 +1953,36 @@
                 能在一夜之间穷尽真理，但当跨领域证伪与简约性追求合二为一，一个不断自我迭代的科学智能体，或许真能帮我们拨开数据荒原中的拟合幻象，一步步走向更真实的物理世界。
               </p>
             </div>
+          </section>
+
+          <section
+            class="comments copy"
+            id="comments"
+            aria-labelledby="comments-title"
+            data-comments
+            data-article="ai4sci-rsi"
+            data-endpoint="https://ludai-blog-comments.stellaludai.chatgpt.site/api/comments"
+          >
+            <h2 id="comments-title">评论</h2>
+            <p class="comments-description">欢迎分享你的想法。无需登录，评论会公开显示；中英文版本共享评论。</p>
+            <form class="comment-form">
+              <div class="comment-field">
+                <label for="comment-name">Your name</label>
+                <input id="comment-name" name="name" type="text" autocomplete="name" maxlength="80" required />
+              </div>
+              <div class="comment-field">
+                <label for="comment-content">Content</label>
+                <textarea id="comment-content" name="content" rows="4" maxlength="4000" required></textarea>
+              </div>
+              <div class="comment-actions">
+                <button class="comment-submit" type="submit">发表评论</button>
+                <p class="comment-status" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+            <ol class="comments-list" aria-label="已发表的评论"></ol>
+            <p class="comments-loading" role="status">正在加载评论…</p>
+            <button class="comments-more" type="button" hidden>加载更多</button>
+            <noscript><p>请启用 JavaScript 以阅读或发表评论。</p></noscript>
           </section>
         </article>
       </div>
